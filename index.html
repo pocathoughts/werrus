@@ -8,70 +8,30 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Iron Oak CrossFit </title>
+    <title>Corrosource </title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
-
-<!--            userId: '17377464',
-            clientId: '845eac13ea9a4b268777795e8f8efb54',
-            accessToken: '17377464.1677ed0.e2319b64ae1c490d8d0fdf25d7ff9389', -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="js/instafeed.js"></script>
 
-    <!-- Script handling the instagram feed-->
-    <script type="text/javascript">
-    var galleryFeed = new Instafeed({
-        get: "user",
-        userId: '479514467',
-        accessToken: "479514467.fb0b9c5.d826296aa5964ce8b63ba1774200091b",
-        resolution: "standard_resolution",
-        useHttp: "true",
-        limit: 3,
-        template: '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><a href="{{image}}"><div class="img-featured-container"><div class="img-backdrop"></div><div class="description-container"><p class="caption">{{caption}}</p><span class="likes"><i class="fa fa-heart"></i> {{likes}}</span><span class="comments"><i class="fa fa-comments"></i> {{comments}}</span></div><img src="{{image}}" class="img-responsive"></div></a></div>',
-        target: "instafeed-gallery-feed",
-        after: function() {
-        // disable button if no more results to load
-        if (!this.hasNext()) {
-          btnInstafeedLoad.setAttribute('disabled', 'disabled');
-        }
-        },
-        });
-        galleryFeed.run();
-
-        
-    </script>
-
-    <script>
-    // Get the video
-    var video = document.getElementById("myVideo");
-
-    // Get the button
-    var btn = document.getElementById("myBtn");
-
-    // Pause and play the video, and change the button text
-    function myFunction() {
-        if (video.paused) {
-            video.play();
-            btn.innerHTML = "Pause";
-        } else {
-            video.pause();
-            btn.innerHTML = "Play";
-        }
-    }
-    </script>
-
-
-<link href="css/custom.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.css" rel="stylesheet">
@@ -79,12 +39,11 @@
   </head>
 
   <body id="page-top">
-
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <nav class="navbar navbar-expand-lg fixed-top text-uppercase" style="background-color: white"  id="mainNav">
       <div class="container">
-          <a href="">
-          <img width = "200px" class="img-fluid mx-auto d-block" src="img/icons/logos/ironOakWhite.png"></a>
+          <a href="" style="font-family: 'Quicksand', sans-serif; color: #bf588bff">
+          <img width="70%" class="img-fluid mx-auto d-block" src="img/logos/mainLogo.png"></a>
             <!--<a class="navbar-brand js-scroll-trigger" href="#page-top"> Iron Oak Crossfit</a>-->
 
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded text-center" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,321 +51,341 @@
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul style="font-family: 'Roboto Condensed', sans-serif;" class="navbar-nav ml-auto">
+          <ul style="font-family: 'Quicksand', sans-serif;" class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="pages/about.html">About</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-primary" href="pages/about">About</a>
+            </li>
+            
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-primary" href="pages/schedule">Divisions</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="pages/coaches.html">Coaches</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-primary" href="pages/memberships">News</a>
             </li>
+            
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="pages/contact.html">Contact</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="pages/schedule.html">Schedule</a>
-            </li>
-
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="pages/memberships.html">Memberships</a>
-            </li>
-
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="pages/start.html">Get Started</a>
-            </li>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-primary" href="pages/coaches">Contact</a>
+            </li>            
           </ul>
         </div>
       </div>
     </nav>
 
+     <header class="masthead text-white text-center " style="background-color: #f6ecf0">
+      <div class="container">
 
-    <!-- <header id="masthead" class="text-white text-center" style="padding-top:20px">
-     
-      <video autoplay muted playsinline loop id="bgvid " style="bottom: -150px;" width="100%">
-        <source src="video/IronOakVideo.mp4" type="video/mp4" /> 
-      </video>
-    </header> -->
+          <!--<img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">-->
+          <div class="row">
+            <div class="col-lg-6 col-md-12 vertically-center">
+              <h6 style="font-family: 'Inconsolata', monospace;">Call me:</h6>
+              <h1  style="font-family: 'Quicksand', sans-serif; color: #bf588bff"> CHRISTINE </h1>
+              <div class="spacer"></div>
+              <h6 style="font-family: 'Inconsolata', monospace;">My Brand Is:</h6>
+              <h2  style="font-family: 'Quicksand', sans-serif; color: #bf588bff"> POCATHOUGHTS </h2>
 
-    <!-- Header Section -->
-    <header style ="background-image: url('img/facilities/facility.png'); background-size: cover; background-position: center center;" class="masthead  text-white text-center">
-     <div class="container">
+              <div class="spacer"></div>
+              <div class="spacer"></div>
 
-        <!--<img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">-->
-        <img class="img-fluid mb-5 d-block mx-auto" src="img/icons/logos/ironOakWhite.png" alt="">
-        <hr class="star-light mb-5">
-        <h2 class="font-weight-light mb-0">CrossFit Gym. CrossFit Family.</h2> 
-
-        <div class ="row text-center" style="padding-top: 50px; margin-bottom:15px;">
-
-            <div style="margin-bottom:15px;" class="col-md-4 col-xs-4 col-lg-4">
-                <a class="btn btn-action btn-circle" href="pages/start.html" style="border-width: 4px;" role="button"><h4>START TODAY</h4></a>
+              <h6 style="font-family: 'Inconsolata', monospace;">I Like to Build Things, Mostly Websites</h6>
             </div>
-            <div style="margin-bottom:15px;" class="col-md-4 col-xs-4 col-lg-4">
-                <a class="btn btn-action btn-circle" href="pages/memberships.html#dropIn" style="border-width: 4px;" role="button"><h4>DROP IN</h4></a>
+            <div class="col-lg-6 col-md-12">
+              <img  height="300px" src="img/photos/Me.png"/>
             </div>
-            <div class="col-md-4 col-xs-4 col-lg-4">
-                <a class="btn btn-action btn-circle" href="pages/schedule.html" style="border-width: 4px;" role="button"><h4>SCHEDULE</h4></a>
-            </div>
+          </div>
+          
         </div>
-      </div>
     </header> 
 
-<!--     <section style="position: relative; background-color: #da601c; padding: 80px" >
-      <div class="container text-center">
-        <div class ="row text-center" style=" ">
+    <!-- Banner Section -->
+    <section  class="bg-secondary" style="padding: 2em;" id="about">
+      
+      <h5 class="text-center  text-white" style="font-family: 'Playfair Display', serif;"><strong>My Philosophy
 
-            <div style=" margin-bottom: 15px; text-align: center;" class="mb-12 col-md-12 col-xs-12 col-s-12 col-lg-4">
-                <a class="btn btn-outline-dark btn-circle" href="pages/start.html" style="border-width: 4px;" role="button"><h4>START TODAY</h4></a>
-            </div>
-            <div style="margin-bottom: 15px; text-align: center;" class="col-md-12 col-xs-12 col-s-12 col-lg-4">
-                <a class="btn btn-outline-dark btn-circle" href="pages/memberships.html#dropIn" style="border-width: 4px;" role="button"><h4>DROP IN</h4></a>
-            </div>
-            <div style="margin-bottom: 15px; text-align: center;" class="col-md-12 col-xs-12 col-s-12 col-lg-4">
-                <a class="btn btn-outline-dark btn-circle" href="pages/schedule.html" style="border-width: 4px;" role="button"><h4>SCHEDULE</h4></a>
-            </div>
-          </div>
-        </div>
+          </strong>
+      </h5>
 
-    </section> -->
-
-      <!-- Instagram Feed Section -->
-    <section class="mb-0 " id="about">
-      <div class="container" >
-        <h2 class="text-center text-uppercase ">Stay Up To Date With Us</h2>
-        <hr class="star-dark mb-5">
-          <div class="container" >
-            <div id="instafeed-gallery-feed" class="gallery row"></div>
-
-          </div>
-      </div>
-    </section>
-
-     <!-- Coaches Section -->
-    <section style="background-image: url('img/facilities/coachingorange.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;" class="mb-0" id="about">
-      <div class="container">
-        <h2 class="text-center text-uppercase">Coaches</h2>
-        <hr class="star-dark mb-5">
-
-        <h3 class="text-center text-uppercase">All of our coaches are L1 & L2 certified. All of them.</h3>
-        <div class="text-center" style="padding-top: 50px">
-            <a class="btn btn-outline-dark" href="pages/coaches.html" style="border-width: 4px" role="button"><h5>Get To Know Them</h5></a>
-
-        </div>
+   </section>
+   <!--End of Banner Section-->
 
 
-      </div>
-    </section>
-
-
-  <!-- Schedule Section -->
-    <section class="mb-0 " style="background-color: #333333" id="about">
-      <div class="container">
-          <h2 class="text-center text-uppercase text-white">WOD</h2>
-          <hr class="star-light mb-5">
-
-          <!--<h3 class="text-center text-white"> For members or those interested in our workouts, check out our "Workout of the Day"</h3>-->
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
-      <script> 
-        function loadFormattedWOD(selector, apiKey, date, location, program) { 
-              $.ajax({ 
-                  url: 'https://app.wodify.com/API/WODs_v1.aspx', 
-                  data: {
-                      apiKey: apiKey, 
-                      date: date, 
-                      location: location, 
-                      program: program, 
-                      type: "json"
-                  },  
- 
-                  success: function(data){  
-                      if(data && data.RecordList.APIWod.FormattedWOD) {  
-                        $(selector).html(data.RecordList.APIWod.FormattedWOD);  
-                      }  
-                  }  
-              });  
-          } 
-          var today = new Date(); 
-          var dateString = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate(); 
-          loadFormattedWOD("#wodbody", "cirk5uto9mkuhqsiwyn23zjxu", dateString, "Iron Oak CF", "Crossfit"); 
-
-      </script> 
-
-
-      <div style="color:white; font-family: Lato; font-size: 20px" id="wodbody" /> 
-
-
-
-
-     </section>
-    
-
-<section style="background-image: url('img/facilities/outsideorange.png'); background-size: cover; background-position: center center; background-repeat: no-repeat;" class="mb-0" id="about">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-white ">WHO WE ARE</h2>
-       
-
-        <!--<iframe style="margin: 0 auto; display: block" src="https://player.vimeo.com/video/261197018" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
--->
-
-<!--
-        <div class="intrinsic-container intrinsic-container-16x9">
-          <iframe src="https://player.vimeo.com/video/261197018" allowfullscreen></iframe>
-        </div>-->
-
-
-
-
-        <!--<div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-          </div>
-      </div>-->
-        <div class="text-center mt-4">
-            <div class="text-center" style="padding-top: 50px">
-                <a class="btn btn-outline-dark" href="pages/coaches.html" style="border-width: 4px" role="button"><h5>Learn More</h5></a>
-
-            </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Schedule Section -->
-    <section class="mb-0 bg-primary" id="about" style="margin-top: 0px; ">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-white">Schedules</h2>
-        <hr class="star-dark mb-5">
-
-        <h3 class="text-center text-white"> Have time before work? </br> Have time at lunch? <br/> Wanna work out before you eat two desserts?  </h3>
-
-        <div class="text-center" style="padding-top: 50px">
-            <a class="btn btn-outline-dark btn-circle" href="pages/schedule.html" style="border-width: 4px;" role="button"><h5>Find Your Time</h5></a>
-
-        </div>
-      </div>
-    </section>
-
-
-
-
-    
-  
-
- <!-- Memberships Section -->
-    <section class="mb-0" id="about">
-      <div class="container">
-        <h2 class="text-center text-uppercase ">Memberships</h2>
-        <hr class="star-dark mb-5">
-
-
-        <h3 class="text-center text-primary"> We offer many different pricing plans </br>  including a couples discount <br/> See what plan fits your lifestyle  </h3>
-
-        <div class="text-center" style="padding-top: 50px">
-            <a class="btn btn-outline-dark btn-circle" href="pages/memberships.html" style="border-width: 4px;" role="button"><h5>PLANS</h5></a>
-
-        </div>
-
-    </section>
-
-    
-
-   
-
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h4 class="text-center text-uppercase text-secondary mb-0">Want to Work Out With Us ? </h4>
-        <h4 class="text-center text-uppercase text-secondary mb-0">Have Questions ? </h4>
-        <div class="spacer"></div>
-        <h2 style="color: #da601c" class="text-center text-uppercase  mb-0">Contact Us</h2>
-        <hr class="star-dark mb-5">
+   <!--Three Main Divisions Section-->
+   <section  class="bg-primary" style="padding: 2em;" id="about">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Name</label>
-                  <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Email Address</label>
-                  <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Phone Number</label>
-                  <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Message</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <br>
-              <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-action btn-xl" id="sendMessageButton">Send</button>
-              </div>
-            </form>
-          </div>
+            <div class="col-lg-4">
+              Image 1
+            </div>
+            <div class="col-lg-4">
+              Image 2
+            </div>
+            <div class="col-lg-4">
+              Image 3
+            </div>
         </div>
       </div>
     </section>
+    <!--End Three Main Divisions Section-->
 
+    <!--Who We Are Section-->
+   <section  class="light-background" style="padding: 2em;" id="about">
+    <div class="container-fluid">
+      <h2 class="mont-header text-center text-uppercase">No More Checks</h2>
+      <div class="row">
+          <div class="container white-background">
+            <div class="row">
+              Hello
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!--End Who We Are Section-->
+
+  <!--Where We Work Section-->
+  <section  class="dark-gradient" style="padding: 2em;" id="about">
+      <div class="container-fluid">
+        <h2 class="mont-header text-center text-uppercase">Where We Work</h2>
+        <div class="row">
+            <div class="container white-background">
+              <div class="row">
+                Hello
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--Where We Work Section-->
+
+    <!--Corrosource In the News Section-->
+    <section  class="dark-gradient" style="padding: 2em;" id="about">
+        <div class="container-fluid">
+          <h2 class="mont-header text-center text-uppercase">Corrosource In The News</h2>
+          <div class="row">
+              <div class="container white-background">
+                <div class="row">
+                  Hello
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!--Corrosource In The News Section-->
+
+
+
+
+      <!-- No More Checks Section -->
+    <section  class="mb-0 light"  style="background-color: #efefefff; padding-bottom:50px; padding-top: 50px" id="about">
+      <div class="container" style="padding-right:30px; padding-bottom: 0;padding-left:30px; ">
+        <h2 class="mont-header text-center text-uppercase text-white">No More Checks</h2>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+
+
+
+        <div class="row" style="background-color: white;  padding-top: 40px; padding-right:20px; padding-left:20px">
+          <div class="col-lg-12" style="padding-bottom: 40px; margin-top:auto; margin-bottom:auto">
+             <img height="120px"  src="img/icons/share-money.png"/>
+          </div>
+          <div class="col-lg-12" style="padding-bottom: 40px; margin-top:auto; margin-bottom:auto">
+             <h4><span class="b">Earnest Money</span> and <span class="b">Option Fee </span>get delivered using the latest technology to make sure those payments arrive securely and promptly.
+
+            </h4>
+          </div>
+          
+          <div class="col-lg-12" style="padding-bottom: 40px; margin-top:auto; margin-bottom:auto">
+             <h4 ><span class="b">InEscrow</span> is safer and cheaper than wiring money, yet faster than writing a check.
+             </h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- Process Improvement Section -->
+    <section class="mb-0 light-gradient" style="padding-top:80px; background-color: #f8f8f8"  id="about">
+      <div class="container">
+          <h2 class="text-center mont-header text-uppercase text-white">less time. more secure.</h2>
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+
+          <h4 class="text-white">We combined the different steps of the process into one digital solution to save all parties time and money.</h4>
+
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+
+          <div class="row text-white"  >
+            
+          
+            <div class="col-lg-4" style="text-align:center; padding-top: 20px">
+                <img height="120px" class="" src="img/icons/seller-white.png"/>
+
+    
+          <div class="spacer"></div>
+
+                <h3 class="mont-header text-white ">Agents</h3>
+                <h5 class="text-white">Save time in pickup, dropoff, and turnaround</h5>
+                <div class="spacer"></div>
+                <a href="pages/realtors.html">
+                  <div class="btn btn-light-outline mont-header text-uppercase">Learn More</div>
+                </a>
+                 <div class="spacer"></div>
+                 <div class="spacer"></div>
+            </div>
+         
+            <div class="col-lg-4" style="text-align:center; padding-top: 20px">
+                <img height="120px" src="img/icons/contract-white.png"/>
+
+       
+          <div class="spacer"></div>
+
+                <h3 class="mont-header text-white ">Title Companies</h3>
+                <h5 class="text-white">Automatically receive payments from buyers account</h5>
+                <div class="spacer"></div>
+                <a href="pages/titlecompanies.html">
+                  <div class="btn btn-light-outline mont-header text-uppercase">Learn More</div>
+                </a>
+                 <div class="spacer"></div>
+                 <div class="spacer"></div>
+            </div>
+
+
+            <div class="col-lg-4" style="text-align:center; padding-top: 20px">
+              <img height="120px" src="img/icons/house-phone-white.png"/>
+
+
+        <div class="spacer"></div>
+
+              <h3 class="mont-header text-white ">InEscrow</h3>
+              <h5 class="text-white">Initiates and facilitates this process in one application</h5>
+             <div class="spacer"></div>
+
+              <a href="pages/about.html"><div class="btn btn-light-outline mont-header text-uppercase">Learn More</div></a>
+               <div class="spacer"></div>
+               <div class="spacer"></div>
+          </div>
+        </div>
+     </section>
+
+
+     <section class="mb-0 " id="about">
+        <div class="container">
+          <h2 class="text-center text-uppercase mont-header ">A NEW KIND OF APPLICATION</h2>
+         
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+           <div class="spacer"></div>
+          <div class="spacer"></div>
+  
+  
+          <div class="row">
+            <div class="col-lg-6 col-xs-12" style="margin-top:auto; margin-bottom: auto; padding-bottom:30px">
+              <h4 class="">InEscrow is a new app to hit the real estate space.<br/><br/>
+              Now, through an intuitive easy to use portal, you can make escrow payments safely and quickly.
+                </h4>
+            </div>
+            <div class="col-lg-6 col-xs-12">
+              <img height="300px" src="img/icons/application.png"/>
+            </div>
+          </div>
+             <div class="spacer"></div>
+        </div>
+      </section>
+
+
+     <!-- Our Partners Section -->
+     <section class="mb-0" id="about" style="background-color: #f8f8f8">
+        <div class="container" >
+          <h2 class="mont-header text-center text-uppercase ">Our Partners</h2>
+         
+         <div class="spacer"></div>
+         <div class="spacer"></div>
+         <div class="spacer"></div>
+       
+          <div class = "row">
+  
+  
+            <div class = "col-lg-6 col-sm-12 col-md-12" style="padding-bottom: 25px">
+              <img class="img-fluid" src="img/logos/ChicagoTitleHouston.png">
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-12">
+                <img class="img-fluid"  src="img/logos/StarTex.png">
+            </div>
+          </div>
+  
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+  
+  
+          <h4 class="text-center  " ><strong>We’ve teamed up with two of the leading title companies to ensure a safe, secure, and streamlined process.</strong>
+          </h4>
+  
+       
+        </div>
+  
+      </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+   <footer class="footer text-center darkest-gradient">
       <div class="container">
         <div class="row">
           <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Location</h4>
-            <p class="lead mb-0">2727 W 11th St
-              <br>Houston, TX 77008</p>
-          </div>
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Around the Web</h4>
+            <h4 class="mont-header mb-4 text-white">InEscrow</h4>
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank" href="https://www.facebook.com/IronOakCF/">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank" href="">
                   <i class="fa fa-fw fa-facebook"></i>
                 </a>
               </li>
-
               <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank" href="https://www.instagram.com/explore/locations/145361756/iron-oak-crossfit/?hl=en">
-                  <i class="fa fa-fw fa-instagram"></i>
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank"  href="">
+                  <i class="fa fa-fw fa-twitter"></i>
+                </a>
+              </li>
+               <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank"  href="">
+                  <i class="fa fa-fw fa-youtube"></i>
                 </a>
               </li>
             </ul>
           </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-white mont-header mb-4 text-white">Resources</h4>
+            <a href="pages/about.html"><h5 class="text-white">About Our Team</h5></a>
+             <a href="pages/about.html"><h5 class="text-white">About the Application </h5></a>
+            <a href="pages/realtors.html"><h5 class="text-white">Listing Agents</h5></a>
+               <a href="pages/realtors.html"><h5 class="text-white">Buying Agents</h5></a>
+               <a href="pages/realtorsfaq.html"><h5 class="text-white">FAQ Agents</h5></a>
+                <a href="pages/titlecompanies.html"><h5 class="text-white">Title Companies</h5></a>
+                 <a href="pages/"><h5 class="text-white">FAQ Title Companies</h5></a>
+          </div>
+          
           <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">Contact Us</h4>
-            <p class="lead mb-0">Some Email Address@email.com <br/> (405) 321-1234
+            <h4 class="text-white mont-header mb-4">Contact Us</h4>
+            <p class="lead mb-0 text-white">info@swiftbears.com <br/> (832) 464-4625
             </p>
           </div>
         </div>
       </div>
     </footer>
+   
 
     <div class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; Iron Oak CrossFit 2018</small>
+        <div class="row">
+          <div class="col-6" style="float: left">
+            <small>Copyright &copy; Swift Bears Software 2019</small>
+          </div>
+          <div class="col-6" style="float: right">
+              <a href="pages/privacyPolicy.html" style="color: white"><small>Terms & Privacy</small></a>
+              <a href="pages/useragreement.html" style="color: white; padding-left: 20px"><small>User Agreement</small></a>
+            </div>
+        </div>
       </div>
     </div>
 
@@ -417,143 +396,71 @@
       </a>
     </div>
 
-    <!-- Portfolio Modals -->
+    
+<!-- The Modal -->
+    <div id="myModal" class="menu-bar  navbar-nav  navbar modal" style="min-height: 100%; padding-top:35px;padding-right:0 !important">
 
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
+      <!-- Modal content -->
+      <div class="" style="min-height: 100%">
+     
+        <div style="float: right; padding-right: 45px; opacity: 1; font-color: white" class="close">&times;</div>
+       
+        <div class="text-center">
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+
+
+          <div class="nav-item dropdown">
+            <a class="nav-link text-uppercase mont-header mont-header text-white py-3 px-0 px-lg-3 nav-link" id="menu1" style="font-size: 25px" role="button" aria-haspopup="true"   href="pages/about.html" >About</a>
           </div>
-        </div>
+
+
+          <div class="nav-item dropdown">
+            <a class="nav-link text-uppercase mont-header mont-header text-white dropdown-toggle py-3 px-0 px-lg-3 nav-link" id="menu1" style="font-size: 25px" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  href="realtors.html" >Realtors
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu custom-dropdown-menu" style="background-color: rgba(62,169,245, 0.8);">
+              <li ><a role="menuitem" class="mont-header text-white" href="pages/realtors.html">Overview</a></li>
+              <li ><a role="menuitem" tabindex="-1" class="mont-header text-white" href="pages/realtorsfaq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-item dropdown">
+            <a class="nav-link text-uppercase mont-header mont-header text-white dropdown-toggle py-3 px-0 px-lg-3 nav-link" id="menu1" style="font-size: 25px" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  href="titlecompanies.html" >Title Companies
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu custom-dropdown-menu" style="background-color: rgba(62,169,245, 0.8);">
+              <li ><a role="menuitem" class="mont-header text-white" href="pages/titlecompanies.html">Overview</a></li>
+              <li ><a role="menuitem" tabindex="-1" class="mont-header text-white" href="pages/titlecompaniesfaq.html">FAQ</a></li>
+              <li ><a role="menuitem" tabindex="-1" class="mont-header text-white" href="pages/pricing.html">Pricing</a></li>
+            </ul>
+          </div>
+
+           <div class="nav-item dropdown">
+            <a class="nav-link text-uppercase mont-header mont-header text-white py-3 px-0 px-lg-3 nav-link" id="menu1" style="font-size: 25px" role="button" aria-haspopup="true"   href="pages/contact.html" >Contact us</a>
+          </div>
+
+            <div class="spacer"></div>
+
+            <div class="col-12 text-center" style="margin-left: auto; margin-right: auto">
+              
+                <a class="mont-header  text-white btn btn-primary nav-link py-3 px-0 px-lg-3 js-scroll-trigger" style="border-radius: 0px !important; margin: 0; width:200px; margin-left: auto; margin-right: auto" href="contact.html" >LOGIN
+                </a>
+              
+          </div>
+          
       </div>
+
+
+      </div>
+
     </div>
 
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+   
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <script src="js/waypoints-lib/jquery.waypoints.min.js"></script>
+    <script src="js/waypoints-lib/noframework.waypoints.min.js"></script>
+    <script src="js/modal.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -564,27 +471,34 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
+    <script src="js/freelancer.js"></script>
 
+    
+    <!-- Load Facebook SDK for JavaScript -->
+    <div class="fb-customerchat"
+       page_id="2023874254341229"
+       minimized="false">
+    </div>
+    <script>
+      
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '563253377457160',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v2.11'
+        });
+      };
+    (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
   </body>
 
 </html>
 
 
-<!-- Video Banner Option
-
-<section style="padding-top: 0; padding-bottom: 0; margin-bottom: 0">
-  <div class="video-container">
-     <video autoplay loop muted>
-         <source src="video/IronOakVideo.mp4" type="video/mp4">
-    
-     </video>
-
-     <div class="overlay-desc" style="">
-     
-      <br/>
-                <a class="btn btn-light-contrast btn-circle" href="pages/about.html" style="border-width: 4px;" role="button"><h4>ABOUT US</h4></a>
-      </div>
-  </div>
-</section>
-  -->

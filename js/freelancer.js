@@ -15,6 +15,12 @@
     }
   });
 
+  $('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+
   // Scroll to top button appear
   $(document).scroll(function() {
     var scrollDistance = $(this).scrollTop();
@@ -73,3 +79,108 @@
   });
 
 })(jQuery); // End of use strict
+
+/*
+$(window).scroll(function () {
+    var y = $(window).scrollTop(),
+        x = $('.animated').offset().top - 600;
+    if (y > x) {
+        $('.animated').addClass('fadeInUp').removeClass('fadeOutDown');
+    } 
+});
+*/
+
+/*
+var waypoints = $('#handler-first').waypoint(function(direction) {
+  alert(this.element.id + ' hit 25% from top of window') 
+}, {
+  offset: '60%'
+})*/
+
+if ( $(window).width() > 992) {      
+  var waypoints = $('.header-fade').waypoint(function(direction) {
+      $('.header-fade').addClass('fade-effect-large');
+    }, {
+      offset: '80%'
+    }) 
+} 
+else {
+  var waypoints = $('.header-fade').waypoint(function(direction) {
+    $('.header-fade').addClass('fade-effect-small');
+    }, {
+      offset: '90%'
+    })
+}
+
+
+var waypoints = $('.fade-in-effect').waypoint(function(direction) {
+  $('.fade-in-effect').addClass('fadein-1');
+}, {
+  offset: '100%'
+})
+
+var waypoints = $('.slide-left-effect').waypoint(function(direction) {
+  $('.slide-left-effect').addClass('slideleft');
+}, {
+  offset: '80%'
+})
+
+
+var waypoints = $('.slide-right-effect').waypoint(function(direction) {
+  $('.slide-right-effect').addClass('slideright');
+}, {
+  offset: '80%'
+})
+
+
+if ( $(window).width() < 992) {      
+  var waypoints = $('.optional-fade').waypoint(function(direction) {
+      $('.optional-fade').addClass('fade-effect');
+    }, {
+      offset: '70%'
+    }) 
+} 
+
+
+var waypoints = $('.header-left').waypoint(function(direction) {
+  $('.header-left').addClass('headerslideright');
+}, {
+  offset: '40%'
+})
+
+var waypoints = $('.header-up').waypoint(function(direction) {
+  $('.header-up').addClass('headerslideup');
+}, {
+  offset: '70%'
+})
+
+
+var waypoints = $('.fade').waypoint(function(direction) {
+  $('.fade').addClass('fade-effect');
+}, {
+  offset: '50%'
+})
+
+var waypoints = $('.fade-small').waypoint(function(direction) {
+  $('.fade-small').addClass('fade-small-1');
+}, {
+  offset: '80%'
+}) 
+
+var waypoints = $('.fade1').waypoint(function(direction) {
+  $('.fade1').addClass('fadein-1');
+}, {
+  offset: '80%'
+})
+
+var waypoints = $('.fade2').waypoint(function(direction) {
+  $('.fade2').addClass('fadein-2');
+}, {
+  offset: '80%'
+})
+
+var waypoints = $('.fade3').waypoint(function(direction) {
+  $('.fade3').addClass('fadein-3');
+}, {
+  offset: '80%'
+})

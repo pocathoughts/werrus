@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 body {
-  font-family: 'Lato', "Helvetica", Arial, sans-serif;
+  font-family: 'Lato', "Helvetica", Arial, Montserrat, Open Sans, sans-serif;
 }
 
+.b {
+  font-weight: bold;
+}
 
 body {
   text-align: center;
@@ -13,10 +16,88 @@ body {
   position: relative;
 }
 
+.nav-tabs > li {
+  float:none;
+  display:inline-block;
+  zoom:1;
+}
+
+.nav-tabs {
+  text-align:center;
+}
+
+.hover-move-up:hover {
+  position: relative; 
+  top: -55px;
+}
+
+.shadow-effect {
+  box-shadow: 10px 10px 50px grey;
+}
+
+.skew-photo{
+  transform: skewX(30deg);
+  transform: skewY(30deg);
+  -webkit-transform: skewY(30deg);
+  -moz-transform: skewY(30deg);
+  background-color: #ccc;
+}
+
+.navbar-trans {
+  background: transparent; }
+
+.top-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+a.navbar-brand, a.logo {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff !important;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0; }
+
+a.logo:hover, a.logo:active, a.logo:focus {
+  text-decoration: none; }
+
+li.nav-item .btn {
+  margin-top: .2rem;
+  margin-left: .4rem; }
+li.nav-item .btn-white {
+  color: #46484a; }
+
 video {
   height: auto;
   vertical-align: middle;
   width: 100%;
+}
+
+.nomargin{
+  margin: 0;
+}
+
+.mont-header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.mont {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
+
+.mont-light {
+  font-family: Montserrat, sans-serif;
+  font-weight: 200;
+}
+
+.mont-extra-light {
+ font-family: Montserrat, sans-serif;
+  font-weight: 100;
 }
 
 #video-landing {
@@ -39,6 +120,72 @@ video {
 
 #video-landing h1{
   font-size: 3em; 
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+
+}
+
+.dark-gradient {
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.darkest-gradient {
+  background-color: #29539b;
+  background-image: linear-gradient(315deg, #741b47ff 0%, #bf588bff 74%);
+}
+
+.blue-gradient {
+  background-color: #3ea8f5;
+  background-image: linear-gradient(315deg, #3ea8f5 0%, #05386b 98%);
+}
+
+.light-gradient {
+    background-color: #3ea8f5;
+  background-image: linear-gradient(315deg, #E8CBC0 30%, #ead1dcff 80%);
+}
+
+.primary-gradient {
+  background-color: #3ea8f5;
+background-image: linear-gradient(315deg, #a2c4c9 30%, #ceead4ff 80%);
+}
+
+.green-gradient {
+    background-color: #3ea8f5;
+  background-image: linear-gradient(315deg,#000000 30%, #166D3B 80%);
+}
+
+.light-green-gradient {
+    background-color: #3ea8f5;
+  background-image: linear-gradient(305deg,#233329, #63D471);
+}
+
+.light-background {
+  background-color: #f9f8f9;
+}
+
+.white-background {
+  background-color: white;
+}
+
+.separator {
+  width: 40%;
+  border-width: 5px;
+  border-color: white;
+  margin-top: 2.5em;
 }
 
 .overlay-desc {
@@ -193,6 +340,16 @@ body {
   margin: 0 5px;
 }
 
+/* This is Jesus come to earth again */
+.box
+{
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
 /* load more button */
 #btn-instafeed-load {
   color: #fff;
@@ -202,6 +359,225 @@ body {
   padding: 8px 40px;
   display: block;
   border: none;
+}
+
+
+/* sliding css */
+
+.headerslideup {
+  opacity: 0;
+  animation: fadein ease 2s forwards;
+}
+
+.headerslideright {
+  opacity: 0;
+  animation: slideinright ease 2s forwards;
+}
+
+.slideleft {
+  opacity: 0;
+  animation: slideinleft ease 3s forwards;
+}
+
+.slideright {  
+  opacity: 0;
+  animation: slideinright ease 3s forwards;
+}
+
+.slide-right-effect{
+  opacity: 0;
+}
+
+.slide-left-effect{
+    opacity: 0;
+}
+
+@keyframes slideinright {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideinleft {
+  0% {
+        transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    from {
+          opacity: 0 !important;
+    left: 00%;
+  }
+
+  to {
+    /* left: auto; */
+    left: 100%;
+    opacity: 1;
+  }
+}
+
+/* end of sliding code */
+
+/* media queries  */
+@media screen and (min-width:768px) {
+  .tofixthemediascreen{
+    display: block;
+  }
+}
+
+/* media queries  */
+@media screen and (max-width:768px) {
+  .tofixthemediascreen{
+    display: block;
+  }
+}
+
+
+/* fading effects */
+
+/* html fade labels */
+.fade {
+  opacity: 0;
+}
+
+.fade-small {
+  opacity: 0;
+}
+
+.small-fade {
+  opacity: 0 !important;
+}
+
+.header-up {
+  opacity: 0;
+}
+
+.fade1, .fade2, .fade3{
+  opacity: 0;
+}
+
+
+/* javascript fade adding classes */
+
+.fade-effect-large {
+  opacity: 0 !important;
+  animation: fadein ease 2s forwards;
+}
+
+.fade-effect-small {
+  opacity: 0 !important;
+  animation: fadein ease 2s forwards;
+}
+
+.fade-effect {
+  animation: fadein ease 2s forwards;
+}
+
+.small-fade-effect {
+  opacity: 0 !important;
+  animation: fadeinsmall ease 2s forwards; 
+}
+
+.fadein-1, .fadein-2, .fadein-3 {
+  animation: fadein ease 2s forwards; 
+}
+
+.fadein-1 {
+    animation-delay: 0.2s;
+}
+
+.fadein-2 {
+  animation-delay: 0.6s;
+}
+
+.fadein-3{
+  animation-delay: 0.9s;
+}
+
+.no-m{
+  margin: 0;
+}
+
+@media screen and (max-width:992px) {
+  .optional-fade{
+    opacity: 0;
+  }
+}
+
+.vc {
+  display: flex;
+  justify-content: center
+}
+
+
+.resources-footer {
+  text-align: center;
+}
+
+
+@media screen and (min-width:992px) {
+  .resources-footer {
+    text-align: left;
+    padding-left: 80px;
+  }
+}
+
+
+@keyframes fadein {
+  0% {
+    opacity: 0 !important;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/*
+@keyframes slideinleft {
+  0% {
+        transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+*/
+
+
+@keyframes fadeinsmall {
+  0% {
+    opacity: 0 !important;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.
+.leFadeInBottom span { animation-name: leFadeInBottom }
+@keyframes leFadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
 }
 
 /* media queries  */
@@ -260,7 +636,7 @@ body {
       }
 
       .fa-times {
-        color: #da601c;
+        color: #blue;
       }
 
       .second-portion
@@ -305,5 +681,5 @@ body {
       }
 
       table,  td {
-          border: 1px solid #da601c;
+          border: 1px solid blue;
       }
