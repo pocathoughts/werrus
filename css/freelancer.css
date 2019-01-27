@@ -131,6 +131,13 @@ section h2 {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
+  color: white !important;
+}
+
+#mainNav .navbar-toggler:hover {
+  font-size: 80%;
+  padding: 0.8rem;
+  color: #002953 !important;
 }
 
 .navbar {
@@ -164,7 +171,7 @@ section h2 {
     border-radius: 0px !important;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
+    color: #002953 !important;
     background: #fbd630;
   }
   #mainNav.navbar-shrink {
@@ -344,11 +351,11 @@ form .row:first-child .floating-label-form-group {
 }
 
 a {
-  color: #a2c4c9;
+  color: #fbd630;
 }
 
 a:focus, a:hover, a:active {
-  color: #a2c4c9;
+  color: #fbd630;
 }
 
 .btn {
@@ -356,7 +363,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: #a2c4c9 !important;
+  background-color: #353c66 !important;
   border-radius: 0 !important;
 }
 
@@ -367,7 +374,7 @@ a:focus, a:hover, a:active {
 }
 
 .light-background {
-  background-color: #f8f8f8 !important;
+  background-color: #efefef !important;
   border-radius: 0 !important;
 }
 
@@ -412,7 +419,7 @@ a:focus, a:hover, a:active {
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: #fbd630;
   border-color: #fbd630;
-  color: white !important;
+  color: #fbd630 !important;
 }
 
 .btn-primary-outline {
@@ -471,17 +478,71 @@ a:focus, a:hover, a:active {
   der: 1px solid rgba(0, 0, 0, 0.15);*/
 }
 
-@media screen and (min-width: 768px) {
+/* Desktop */
+@media screen and (min-width: 992px) {
   .home-header-image {
-    background-image: url('../img/backgrounds/homePageScaled.png');
-        background-attachment: fixed;
+    background-image: url('../img/backgrounds/home.png');
+    background-attachment: fixed;
+    height: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
+/* Tablet Large */
+@media screen and (max-width: 991px) {
   .home-header-image {
-    background-image: url('../img/backgrounds/homePageScaled.png');
-        background-attachment: fixed;
+    background-image: url('../img/backgrounds/homeTablet.png');
+    height: 100%;
+  }
+}
+
+/* Small Tablet */
+@media screen and (max-width: 767px) {
+  .home-header-image {
+    background-image: url('../img/backgrounds/homeTablet.png');
+    background-attachment: fixed;
+    height: 100%;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 479px) {
+  .home-header-image {
+    background-image: url('../img/backgrounds/homePhone.png');
+        height: 100%;
+  }
+}
+
+/* Header Spacing */
+@media screen and (min-width: 1248px) {
+  .header-spacing {
+    padding-bottom: 500px;
+  }
+}
+
+/* Tablet Large */
+@media screen and (max-width: 1248px) {
+  .header-spacing {
+    padding-bottom: 350px;
+  }
+}
+
+/* Small Tablet */
+@media screen and (max-width: 767px) {
+  .header-spacing {
+    padding-bottom: 180px;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 550px) {
+  .header-spacing {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tablet-optimize{
+    display: none;
   }
 }
 
@@ -540,10 +601,10 @@ a:focus, a:hover, a:active {
 
 .close:hover,
 .close:focus {
-    color: #a2c4c9;
+    color: #fbd630;
     text-decoration: none;
     cursor: pointer;
-    text-shadow: 0 1px 0 #a2c4c9;
+    text-shadow: 0 1px 0 #fbd630;
 }
 
 .menu-button {
@@ -553,8 +614,7 @@ a:focus, a:hover, a:active {
 }
 
 .menu-button:hover {
-  color: 
-#a2c4c9 !important;
+  color: #fbd630 !important;
 }
 
 
@@ -711,7 +771,7 @@ a:focus, a:hover, a:active {
    
 
 .btn-action:hover {
-    color: #a2c4c9;
+    color: #fbd630;
     background-color: white;
 }
 

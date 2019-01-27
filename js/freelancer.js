@@ -523,6 +523,7 @@ var optionsNormal = {
   var scrollNum = document.getElementById("scroll-num");
   var scrollDemo = new CountUp(scrollNum, 0, 2015, 0, 2.5, options);
 
+  // desktop version
   var firstNum = document.getElementById("first-num");
   var firstScroll = new CountUp(firstNum, 0, 3, 0, 4.5, optionsNormal);
 
@@ -532,9 +533,20 @@ var optionsNormal = {
   var thirdNum = document.getElementById("third-num");
   var thirdScroll = new CountUp(thirdNum, 0, 50, 0, 4.5, optionsPlus);
 
+  // mobile version
+  var firstNumMobile = document.getElementById("first-num-mobile");
+  var firstScrollMobile = new CountUp(firstNumMobile, 0, 3, 0, 4.5, optionsNormal);
+
+  var secondNumMobile = document.getElementById("second-num-mobile");
+  var secondScrollMobile = new CountUp(secondNumMobile, 0, 37.5, true, 4.5, optionsDollar);
+
+  var thirdNumMobile = document.getElementById("third-num-mobile");
+  var thirdScrollMobile = new CountUp(thirdNumMobile, 0, 50, 0, 4.5, optionsPlus);
+
   var hoverNum = document.getElementById("hover-num");
   var hoverDemo = new CountUp(hoverNum, 0, 3000, 0, 2.5, options);
   
+  // animations
   jQuery('.first-counter').waypoint(
     function(direction){
       if(direction == "down") {
@@ -557,6 +569,33 @@ var optionsNormal = {
     function(direction){
       if(direction == "down") {
         thirdScroll.start();
+      }
+    },
+    { offset: '70%' }
+  );
+
+  jQuery('.first-counter-mobile').waypoint(
+    function(direction){
+      if(direction == "down") {
+        firstScrollMobile.start();
+      }
+    },
+    { offset: '70%' }
+  );
+
+  jQuery('.second-counter-mobile').waypoint(
+    function(direction){
+      if(direction == "down") {
+        secondScrollMobile.start();
+      }
+    },
+    { offset: '70%' }
+  );
+
+  jQuery('.third-counter-mobile').waypoint(
+    function(direction){
+      if(direction == "down") {
+        thirdScrollMobile.start();
       }
     },
     { offset: '70%' }
