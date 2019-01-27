@@ -160,11 +160,12 @@ section h2 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #a2c4c9;
+    background: #575757;
+    border-radius: 0px !important;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #a2c4c9;
+    background: #fbd630;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -386,9 +387,22 @@ a:focus, a:hover, a:active {
     }
  }
 
+ 
+
 .btn-primary {
   background-color: #0b1641;
   border-color: #0b1641;
+}
+
+.btn-bold {
+  background-color: #353c66;
+  border-color: #353c66;
+}
+
+.btn-bold:hover, .btn-bold:focus, .btn-bold:active {
+  background-color: #fbd630;
+  border-color: #fbd630;
+  color: #353c66 !important;
 }
 
 .counter-count {
